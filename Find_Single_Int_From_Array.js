@@ -1,18 +1,19 @@
 (function main() {
     var solution = function(arr) {
-      
+        
         for (var i =0; i< arr.length; i++){
-            var flag = true;
-            for (var j = 0; j < arr.length-1; j++){
-                if(arr[i] !== arr[j]){
-                    flag = false;
+            var counter = 0;
+            for (var j = i+1; j < arr.length-1; j++){
+                if(arr[i] === arr[j]){
+                    counter++;
                 }
+
             }
-            if(flag=true){
-                return arr[i];
+            if(counter === 0){
+                console.log(arr[i]);
             }
-        }
-        console.log("running")           
+
+        }      
        
     };
    
