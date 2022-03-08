@@ -9,6 +9,7 @@
                     flag = false;
                 }
             }
+            console.log(flag)
             if(flag === true ){
                 console.log(arr[i])
                 break;
