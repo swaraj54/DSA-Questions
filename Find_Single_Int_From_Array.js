@@ -1,22 +1,10 @@
 (function main() {
 
     var solution = function(arr) {
-        console.log(arr)
-        for (var i = 0; i < arr.length; i++){   //3
-            var flag = true;
-            
-            for (var j = i+1; j < arr.length; j++){  //5
-                if( arr[i] === arr[j] ){
-                    flag = false;
-                    break;
-                }
-                else {
-                    console.log(arr[i])
-                }
-            }
-            if (flag === false){
-                console.log("finaL" , arr[i])
-            }
+        var narr = arr.sort();
+        // console.log(narr.length)
+        for (var i = 0; i < narr.length; i++){   //3
+            console.log(narr[i])
         }      
     };
    
