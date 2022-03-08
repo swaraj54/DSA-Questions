@@ -2,9 +2,9 @@
 
     var solution = function(arr) {
         var narr = arr.sort();
-        // console.log(narr.length)
+        //  console.log(narr.length)
         for (var i = 0; i < narr.length; i++){   //3
-            console.log(narr[i])
+            console.log(narr[i++])
         }      
     };
    
