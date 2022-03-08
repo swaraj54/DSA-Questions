@@ -4,18 +4,18 @@
         console.log(arr)
         for (var i = 0; i < arr.length; i++){   //3
             var flag = true;
-            for (var j = i; j < arr.length; j++){  //5
-                if( arr[i]!==arr[j] ){
+            
+            for (var j = i+1; j < arr.length; j++){  //5
+                if( arr[i] === arr[j] ){
                     flag = false;
-                } else {
-                    flag = true;
                     break;
                 }
+                else {
+                    console.log(arr[i])
+                }
             }
-            // console.log(flag)
-            if(flag === false ){
-                console.log(arr[i])
-                break;
+            if (flag === false){
+                console.log("finaL" , arr[i])
             }
         }      
     };
