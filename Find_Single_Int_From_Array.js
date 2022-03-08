@@ -2,15 +2,18 @@
 
     var solution = function(arr) {
         console.log(arr)
-        for (var i = 0; i < arr.length; i++){
+        for (var i = 0; i < arr.length; i++){   //3
             var flag = true;
-            for (var j = i+1; j < arr.length; j++){
-                if( arr[i]===arr[j] ){
+            for (var j = i; j < arr.length; j++){  //5
+                if( arr[i]!==arr[j] ){
                     flag = false;
+                } else {
+                    flag = true;
+                    break;
                 }
             }
-            console.log(flag)
-            if(flag === true ){
+            // console.log(flag)
+            if(flag === false ){
                 console.log(arr[i])
                 break;
             }
